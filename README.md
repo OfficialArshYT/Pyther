@@ -1,4 +1,4 @@
-# Pyther OS 1.0.8
+# Pyther 1.0.8
 
 A hobby x86 operating system framework powered by a custom Python AST-to-C transpiler engine and bare-metal drivers.
 
