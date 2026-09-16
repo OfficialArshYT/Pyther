@@ -1,33 +1,73 @@
-# Pyther 1.0.8
+# Pyther Engine v1.1.5
 
-A hobby x86 operating system framework powered by a custom Python AST-to-C transpiler engine and bare-metal drivers.
+An open-source, bare-metal 64-bit operating system framework and transpiler pipeline. Pyther Engine allows developers to write high-performance x86_64 system interfaces, desktop suites, and graphical games entirely in imperative Python logic by parsing scripts through an Abstract Syntax Tree (AST) compiler.
 
-## What is this?
-Pyther lets you write kernel logic in Python (`kernel.py`). The build engine (`build.py`) parses your Python AST, emits bare-metal C drivers combined with your translated code, and builds a bootable 32-bit OS image.
+## Core Features
+* **Bare-Metal Python Execution:** Write regular Python logic inside `kernel.py` and transpile it directly into standalone, natively compilable 64-bit C code.
+* **Master Workspace Desktop OS:** Includes a fully functional operational desktop interface featuring built-in user utilities (Calculator, Notepad), system diagnostics (Memory Scan, System Information), graphics suite tests, and an integrated grid-based game (*Apple Collector*).
+* **Proportional Vector Typography:** Custom high-definition 1:2 Golden Ratio mathematical font engine maps the full US/UK keyboard symbol layout natively to raw screen coordinates.
+* **Dynamic Hardware Alignment:** Viewport kerning calculations dynamically query the motherboard's active Graphics Output Protocol (GOP) screen resolution values for absolute dead-center text alignment.
+* **AST-Optimized Game Engine Logic:** Designed for strict imperative execution with dedicated key-value processing, dynamic digit extraction, and boundary collision handling without fallthrough logic.
+* **Stable Assembly Shims:** Hand-written 16-byte aligned assembly landing shims prevent stack alignment exceptions across virtual hypervisors and real hardware.
 
-## Features
-- Transpiles a subset of Python syntax into freestanding C.
-- Bare-metal VGA text-mode graphics and PS/2 keyboard scancode drivers.
-- Built-in API helpers: `os_clear`, `os_print`, `os_print_int`, `os_draw_box`, `os_backspace`, `os_read_char`, `os_read_int`.
-- Demo suite included: Extended Calculator, Text Notepad, VGA Palette Demo, and In-OS Developer Guide.
+## Project Structure
+```text
+1.1.5/
+├── fonts/               # Local typographic asset binaries
+├── system/              # Temporary generated C and intermediate link targets
+├── build.py             # Main AST node translation compiler script
+├── entry.asm            # 16-bit stack aligner assembly landing frame
+├── kernel_entry.c       # Unified global UEFI context header template
+└── kernel.py            # Active Python developer workspace loop script (Desktop OS & Applications)
+```
 
-## Quick Start
+## Prerequisite Toolchain
+Ensure the following packages are globally installed and accessible via your local MSYS2 / UCRT64 shell workspace path environment variables:
+* **Python 3.8+** (for parsing abstract semantic syntax blocks)
+* **NASM** (Netwide Assembler for handling entry shims)
+* **x86_64-w64-mingw32-gcc** (GNU Cross-compiler toolchain)
+* **mtools** (`mformat`, `mmd`, `mcopy` for FAT32 disk volume construction)
 
-### Prerequisites
-Install GCC (32-bit support), NASM, Python 3, and QEMU.
-
-### Build & Run Command
+## Usage Instruction Row
+To compile your custom workspace code directly into a bootable partition drive image, execute the master builder script from your terminal:
 ```bash
-python build.py && qemu-system-x86_64 -drive format=raw,file=pyther_os.img
+python build.py
+```
 
+To test and execute your finished `pyther_fat.img` sector file within the QEMU hypervisor suite, launch the boot wrapper:
+```bash
+qemu-system-x86_64 \
+  -drive "if=pflash,format=raw,readonly=on,file=C:/msys64/ucrt64/share/qemu/edk2-x86_64-code.fd" \
+  -drive "file=pyther_fat.img,format=raw" \
+  -vga std
 ```
 
 ## Author & Credits
-
 * **Developer:** Arsh
-* **GitHub:** [OfficialArshYT](https://github.com/OfficialArshYT)
-
+* **GitHub:** [@OfficialArshYT](https://github.com/OfficialArshYT)
 * **YouTube:** [@OfficialArsh.](https://www.youtube.com/@OfficialArsh.)
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=MIT-LICENSE) file for details.
+## License
+MIT License
+
+Copyright (c) 2026 Arsh
+GitHub: https://github.com/OfficialArshYT
+YouTube: https://www.youtube.com/@OfficialArsh.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
