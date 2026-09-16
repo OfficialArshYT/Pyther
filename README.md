@@ -30,4 +30,4 @@ python build.py && qemu-system-x86_64 -drive format=raw,file=pyther_os.img
 * **YouTube:** [@OfficialArsh.](https://www.youtube.com/@OfficialArsh.)
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=MIT-LICENSE) file for details.
