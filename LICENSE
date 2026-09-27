@@ -1,24 +1,22 @@
-PYTHER ENGINE SOURCE LICENSE
-Copyright (c) 2026 Arsh
+## License & Copyright
 
-Youtube: @OfficialArsh.
-GitHub: @OfficialArshYT
+**Copyright (c) 2026 Arsh**  
+YouTube: [@OfficialArsh.](https://www.youtube.com/@OfficialArsh.)  
+GitHub: [@OfficialArshYT](https://github.com/OfficialArshYT)  
 
-1. PERMITTED FILES (VIEW & EDIT)
-You are permitted to view, edit, and modify "kernel.py" and "build.py" strictly for 
-creating applications, features, and building images running on top of Pyther Engine.
+### Custom License Terms
 
-2. RESTRICTED CORE FILES & ENGINE LOGIC
-All files, Assembly modules, C drivers, headers, and internal engine logic outside of "kernel.py" and "build.py" are provided solely for compilation and reference. You MAY NOT modify, tamper with, re-license, or redistribute modified versions of these core engine files without explicit written permission from the Author.
+1. **ALL RIGHTS RESERVED (CORE ENGINE & DRIVERS)**  
+   All source code, assembly modules, C drivers, headers, font binaries, build configs, and underlying engine logic outside of `kernel.py` and `build.py` are **All Rights Reserved**. You MAY NOT modify, reverse-engineer, redistribute, re-license, or claim ownership over any part of the core engine.
 
-3. COMMERCIAL USE & PERMISSION
-You MAY NOT use the software for unlawful and unethical purposes or sell, monetize, sublicense, or distribute any commercial product using Pyther Engine 
-without explicit written permission and a signed agreement from the Author. Unacknowledged 
-or unauthorized commercial projects are strictly prohibited. The Author reserves the right 
-to revoke sales permission at any time.
+2. **PERMITTED MODIFICATIONS (`kernel.py` & `build.py`)**  
+   You are permitted to view, edit, and modify `kernel.py` and `build.py` strictly for writing applications, games, and UI components to run on top of the Pyther Engine platform.
 
-4. MANDATORY ATTRIBUTION & OPEN SOURCE (COPYLEFT)
-Any public reupload, private reupload, reupload, fork, monetized distribution or free distribution of projects built with Pyther MUST:
-- Prominently credit Arsh as the creator of the Pyther framework and include @OfficialArsh. as the YouTube channel of the Pyther framework and @OfficialArshYT as the GitHub username of the creator of the Pyther framework.
-- Never claim original authorship over the underlying framework or core engine.
-- Keep all user-created Python scripts fully open-source under these same terms.
+3. **COMMERCIAL USE RESTRICTIONS**  
+   Commercial use, monetization, sublicensing, or paid distribution of Pyther Engine or any project built using Pyther Engine is strictly prohibited without explicit written permission and a signed agreement from Arsh.
+
+4. **MANDATORY ATTRIBUTION & DISTRIBUTION**  
+   Any public showcase, fork, or distribution featuring projects built with Pyther Engine MUST:
+   - Include prominent credit to **Arsh** as the original framework creator.
+   - Include links to YouTube (`@OfficialArsh.`) and GitHub (`@OfficialArshYT`).
+   - Retain this exact license and copyright notice in full without alteration.
