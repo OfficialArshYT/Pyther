@@ -1,6 +1,6 @@
 # Pyther Engine v1.1.5
 
-An open-source, bare-metal 64-bit operating system framework and transpiler pipeline. Pyther Engine allows developers to write high-performance x86_64 system interfaces, desktop suites, and graphical games entirely in imperative Python logic by parsing scripts through an Abstract Syntax Tree (AST) compiler.
+An bare-metal 64-bit operating system framework and transpiler pipeline. Pyther Engine allows developers to write high-performance x86_64 system interfaces, desktop suites, and graphical games entirely in imperative Python logic by parsing scripts through an Abstract Syntax Tree (AST) compiler.
 
 ## Core Features
 * **Bare-Metal Python Execution:** Write regular Python logic inside `kernel.py` and transpile it directly into standalone, natively compilable 64-bit C code.
@@ -48,26 +48,27 @@ qemu-system-x86_64 \
 * **YouTube:** [@OfficialArsh.](https://www.youtube.com/@OfficialArsh.)
 
 ## License
-MIT License
-
+PYTHER ENGINE SOURCE LICENSE
 Copyright (c) 2026 Arsh
-GitHub: https://github.com/OfficialArshYT
-YouTube: https://www.youtube.com/@OfficialArsh.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Youtube: @OfficialArsh.
+GitHub: @OfficialArshYT
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. PERMITTED FILES (VIEW & EDIT)
+You are permitted to view, edit, and modify "kernel.py" and "build.py" strictly for 
+creating applications, features, and building images running on top of Pyther Engine.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. RESTRICTED CORE FILES & ENGINE LOGIC
+All files, Assembly modules, C drivers, headers, and internal engine logic outside of "kernel.py" and "build.py" are provided solely for compilation and reference. You MAY NOT modify, tamper with, re-license, or redistribute modified versions of these core engine files without explicit written permission from the Author.
+
+3. COMMERCIAL USE & PERMISSION
+You MAY NOT use the software for unlawful and unethical purposes or sell, monetize, sublicense, or distribute any commercial product using Pyther Engine 
+without explicit written permission and a signed agreement from the Author. Unacknowledged 
+or unauthorized commercial projects are strictly prohibited. The Author reserves the right 
+to revoke sales permission at any time.
+
+4. MANDATORY ATTRIBUTION & OPEN SOURCE (COPYLEFT)
+Any public reupload, private reupload, reupload, fork, monetized distribution or free distribution of projects built with Pyther MUST:
+- Prominently credit Arsh as the creator of the Pyther framework and include @OfficialArsh. as the YouTube channel of the Pyther framework and @OfficialArshYT as the GitHub username of the creator of the Pyther framework.
+- Never claim original authorship over the underlying framework or core engine.
+- Keep all user-created Python scripts fully open-source under these same terms.
