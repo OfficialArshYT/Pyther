@@ -1,4 +1,4 @@
-# Pyther Engine v1.1.5
+# Pyther Engine v1.0.8
 
 An bare-metal 64-bit operating system framework and transpiler pipeline. Pyther Engine allows developers to write high-performance x86_64 system interfaces, desktop suites, and graphical games entirely in imperative Python logic by parsing scripts through an Abstract Syntax Tree (AST) compiler.
 
